@@ -1,0 +1,19 @@
+name: CustomHorns
+version: 1.0.0
+main: ru.customhorns.CustomHorns
+api-version: '1.21'
+description: Особые рога с усилениями и способностями
+commands:
+  horn:
+    description: Выдача особых рогов (только админ)
+    usage: /horn <give|list|reload>
+    aliases: [customhorn]
+    permission: customhorns.admin
+  hteam:
+    description: Команда для рогов (союзники)
+    usage: /hteam <create|invite|accept|leave|kick|list|disband>
+    aliases: [hornteam]
+permissions:
+  customhorns.admin:
+    description: Выдача рогов
+    default: op
